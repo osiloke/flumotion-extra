@@ -84,7 +84,7 @@ class FluToStomp:
         print "need to connect to stomp port %s" % (options.stomp,)
         self.options = options
         connection = connections.parsePBConnectionInfo(options.manager,
-                                                       not options.no_ssl)
+                                                       use_ssl=not options.no_ssl)
         self.model = model = AdminModel()
         self.stomp_client = StompClient()
         reactor.connectTCP("localhost", int(self.options.stomp), self.stomp_client)
