@@ -1,0 +1,8 @@
+Options -Indexes
+AuthUserFile /root/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Flumotion Admin"
+AuthType Basic
+<Limit GET POST>
+require valid-user
+</Limit>
