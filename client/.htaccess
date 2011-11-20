@@ -1,5 +1,5 @@
 Options -Indexes
-AuthUserFile /root/.htpasswd
+AuthUserFile /var/www/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Flumotion Admin"
 AuthType Basic
